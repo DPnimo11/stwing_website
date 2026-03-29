@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-textMain font-sans;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+/* Custom utility for glassmorphism */
+.glass {
+  background: rgba(21, 21, 32, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.6), 0 0 20px rgba(0, 210, 255, 0.4);
+}
